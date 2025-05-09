@@ -1,0 +1,116 @@
+@import "variable";
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #fff;
+    width: 24.6rem;
+    padding: 2.4rem 1.6rem;
+
+
+     @media #{$md}{
+        display: none;
+     }
+     @media #{$sm}{
+        display: none;
+     }
+
+    &__logo {
+        margin: 0 0 10rem;
+
+        
+    }
+
+    &__list {
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+ 
+
+            li {
+                list-style-type: none;
+
+                a.active {
+                    background-color: $primary;
+
+                    span {
+                        color: #fff;
+                    }
+
+                    img {
+                        filter: brightness(300%);
+                    }
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.6rem;
+                    padding: 1.8rem 2.4rem;
+                    text-decoration: none;
+                    border-radius: 0.6rem;
+
+                 
+
+                    &:hover {
+                        background-color: $primary;
+
+                        span {
+                            color: #fff;
+                        }
+
+                        img {
+                            filter: brightness(300%);
+                        }
+                    }
+
+                    span {
+                        color: #6D737A;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    &__logout {
+        position: absolute;
+        bottom: 2rem;
+        
+
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 1.8rem 2.4rem;
+            text-decoration: none;
+            border-radius: 0.6rem;
+ 
+
+            &:hover {
+                background-color: $primary;
+
+                span {
+                    color: #fff;
+                }
+
+                img {
+                    filter: brightness(300%);
+                }
+            }
+
+            span {
+                color: #6D737A;
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+}

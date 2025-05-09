@@ -1,0 +1,94 @@
+@import "variable";
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 1.6rem 4rem;
+    position: relative;
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+    }
+
+    &__start {
+        display: none;
+        position: absolute;
+        gap: 9rem;
+        left: 1rem;
+        margin-left: 1rem;
+
+
+        a {
+            left: 0rem;
+            gap: 4rem;
+            position: relative;
+
+            .menu{
+                height: 4rem;
+                width: 4rem;
+            }
+            img {
+                height: 2rem;
+                width: 2rem;
+            }
+           
+        }
+
+        @media #{$md} {
+            display: block;
+        }
+
+        @media #{$sm} {
+            display: block;
+
+        }
+    }
+
+    &__end {
+        display: flex;
+        align-items: center;
+        gap: 2.4rem;
+
+        @media #{$sm} {
+            position: relative;
+            gap: 1rem;
+        }
+    }
+
+    &__notification {
+        button {
+            all: unset !important;
+            cursor: pointer !important;
+
+        }
+    }
+
+    &__wallet {
+        button {
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+            background-color: $primary;
+            border-radius: 0.6rem;
+            padding: 1.6rem;
+            border: none;
+            cursor: pointer;
+
+            span {
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: #fff;
+            }
+        }
+
+        @media #{$sm} {
+            margin-left: 1rem;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "variable";
+@import "sidebar";
+@import "header";
+@import "dashboard";
+@import "rih";
+@import "user";
+@import "userprofile";
+@import"reward";
+@import"wallet";
+@import "properties";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Nunito", sans-serif !important;
+    min-height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    font-weight: 400;
+    color: $white !important;
+    background-color: #F6F6F6 !important;
+}
+
+.layout {
+    padding: 3rem 2rem 2rem 28rem;
+ @media #{$md} {
+   
+   padding: 0rem;
+ }
+    
+ @media #{$sm} {
+   
+  padding: 0rem;
+}
+}
+.rihlt{
+    padding: 3rem 2.4rem 1rem 28rem;
+
+    
+    @media #{$md} {
+      padding: 2rem;
+  }
+
+  @media #{$sm} {
+    padding: 1rem;
+}
+}

@@ -1,0 +1,136 @@
+@import "variable";
+
+.usermain {
+
+    margin-top: 3rem;
+    margin-bottom: 2.4rem;
+    padding: 2rem;
+    font-family: 'Nunito', sans-serif;
+    background-color: #ffff;
+    border: 1px solid #DFDFDF;
+
+    @media #{$sm} {
+        margin: 3rem 0 2.4rem;
+        padding: 2rem;
+    }
+
+    &__navigation {
+        margin-bottom: 2.4rem;
+        display: flex;
+        border-bottom: 0.1px solid #000AFF;
+
+        @media #{$sm} {
+            margin-bottom: 2.4rem;
+            gap: 1rem;
+            flex-wrap: nowrap;
+        }
+
+        button {
+            padding: 1.2rem 2.4rem;
+            border: none;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            color: #AEAEB0;
+            background-color: #FFFFff;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            @media #{$sm} {
+                padding: 1.2rem 2.4rem;
+                font-size: 1.4rem;
+                border-radius: 0.5rem 0.5rem 0 0;
+            }
+
+            &.active {
+                background-color: #000AFF;
+                color: #FFFFff;
+            }
+
+            &:hover {
+                background-color: #000AFF;
+                color: #FFFFff;
+            }
+        }
+    }
+
+    &__table {
+        background: white;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+            thead {
+                background-color: #F6F6F6;
+                border-bottom: 2px solid #e2e8f0;
+
+                th {
+                    padding: 1.6rem 2.4rem;
+                    text-align: left;
+                    color: #64748b;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    font-family: nunito;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+
+                    @media #{$sm} {
+                        padding: 1.6rem 2.4rem;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    border-bottom: 0.5px solid #888BA133;
+                    transition: background-color 0.2s ease;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    &:hover {
+                        background-color: #f8fafc;
+                    }
+
+                    .no {
+                        color: #6D737A;
+                    }
+
+                    td {
+                        padding: 1.4rem 2.4rem;
+                        color: #131313;
+                        font-size: 1.6rem;
+
+                        font-family: Nunito;
+                        font-weight: 500;
+
+                        line-height: 150%;
+                        letter-spacing: 0%;
+                        text-transform: capitalize;
+
+
+                        @media #{$sm} {
+                            padding: 1.4rem 2.4rem;
+                            font-size: 1.6rem;
+                        }
+
+                        &.blue {
+                            color: #3b82f6;
+                            font-weight: 500;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user</title>
+    <link rel="stylesheet" href="./scss/style.css">
+
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+
+<body>
+
+   
+    <section class="header">
+        <div class="header__flex">
+            <div class="header__start">
+
+                
+                <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <img src="./assets/img/header/menu.svg" alt="menu" class="menu">
+                  </a>
+
+                <img src="./assets/img/logo.svg" alt="logo">
+
+
+
+
+                  <!-- bootstrap -->
+
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      
+                      <img src="./assets/img/logo.svg" alt=""  class="offcanvas-title" id="offcanvasExampleLabel">
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="sidebar__list">
+                            <ul>
+                                <li>
+                                    <a href="./index.html" class="active">
+                                        <img src="./assets/img/sidebar/dashboard.svg" alt="">
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="users.html">
+                                        <img src="./assets/img/sidebar/users.svg" alt="">
+                                        <span>Users</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./listed.html">
+                                        <img src="./assets/img/sidebar/create.svg" alt="">
+                                        <span>Create Property</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./Properties.html">
+                                        <img src="./assets/img/sidebar/properties.svg" alt="">
+                                        <span>Properties</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/img/sidebar/setting.svg" alt="">
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar__logout">
+                            <a href="#">
+                                <img src="./assets/img/sidebar/loguot.svg" alt="">
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="header__end">
+                <div class="header__notification">
+                    <button>
+                        <img src="./assets/img/header/notification.svg" alt="">
+                    </button>
+                </div>
+                <div class="header__wallet">
+                    <button>
+                        <img src="./assets/img/header/wallet.svg" alt="">
+                        <span>0x8bf376fdb...</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sidebar">
+        <div class="sidebar__logo">
+            <img src="./assets/img/logo.svg" alt="">
+        </div>
+        <div class="sidebar__list">
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        <img src="./assets/img/sidebar/dashboard.svg" alt="">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./users.html" class="active">
+                        <img src="./assets/img/sidebar/users.svg" alt="">
+                        <span>Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/sidebar/create.svg" alt="">
+                        <span>Create Property</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./Properties.html">
+                        <img src="./assets/img/sidebar/properties.svg" alt="">
+                        <span>Properties</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/sidebar/setting.svg" alt="">
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar__logout">
+            <a href="">
+                <img src="./assets/img/sidebar/create.svg" alt="">
+                <span>Logout</span>
+            </a>
+        </div>
+
+    </section>
+
+    <section class="layout">
+
+        <div class="user">
+            <div class="user__title">
+                <h2>User</h2>
+            </div>
+            <div class="user__all-content">
+                <div class="user__content">
+                    <div class="user__search-export">
+                        <div class="user__search">
+                            <input type="text" placeholder="Search by wallet address">
+                            <button><img src="./assets/img/usertable/searchicon.svg" alt="Search"></button>
+                        </div>
+                        <div class="user__export-button">
+                            <button class="export-button">Export</button>
+                        </div>
+                    </div>
+                    <div class="user__table-content">
+                        <div class="user__table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Sl.No</th>
+                                        <th>User ID</th>
+                                        <th>Wallet Address</th>
+                                        <th>Joining Date</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>0x8bffdb...c7f4bf4</td>
+                                        <td class="blue">0x8bffdb...c7f4bf4</td>
+                                        <td>17 November 2022, 10:12 AM</td>
+                                        <td><span class="status_success">Success</span></td>
+                                        <td><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>0x8bffdb...c7f4bf4</td>
+                                        <td class="blue">0x8bffdb...c7f4bf4</td>
+                                        <td>17 November 2022, 10:12 AM</td>
+                                        <td><span class="status_pending">Pending</span></td>
+                                        <td><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>0x8bffdb...c7f4bf4</td>
+                                        <td class="blue">0x8bffdb...c7f4bf4</td>
+                                        <td>17 November 2022, 10:12 AM</td>
+                                        <td><span class="status_failed">Failed</span></td>
+                                        <td><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04</td>
+                                        <td>0x8bffdb...c7f4bf4</td>
+                                        <td class="blue">0x8bffdb...c7f4bf4</td>
+                                        <td>17 November 2022, 10:12 AM</td>
+                                        <td><span class="status_success">Success</span></td>
+                                        <td><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td>05</td>
+                                        <td>0x8bffdb...c7f4bf4</td>
+                                        <td class="blue">0x8bffdb...c7f4bf4</td>
+                                        <td>17 November 2022, 10:12 AM</td>
+                                        <td><span class="status_success">Success</span></td>
+                                        <td><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td>06</td>
+                                        <td>0x8bffdb...c7f4bf4</td>
+                                        <td class="blue">0x8bffdb...c7f4bf4</td>
+                                        <td>17 November 2022, 10:12 AM</td>
+                                        <td><span class="status_success">Success</span></td>
+                                        <td><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td>07</td>
+                                        <td>0x8bffdb...c7f4bf4</td>
+                                        <td class="blue">0x8bffdb...c7f4bf4</td>
+                                        <td>17 November 2022, 10:12 AM</td>
+                                        <td><span class="status_success">Success</span></td>
+                                        <td><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td>08</td>
+                                        <td>0x8bffdb...c7f4bf4</td>
+                                        <td class="blue">0x8bffdb...c7f4bf4</td>
+                                        <td>17 November 2022, 10:12 AM</td>
+                                        <td><span class="status_success">Success</span></td>
+                                        <td><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td>09</td>
+                                        <td>0x8bffdb...c7f4bf4</td>
+                                        <td class="blue">0x8bffdb...c7f4bf4</td>
+                                        <td>17 November 2022, 10:12 AM</td>
+                                        <td><span class="status_success">Success</span></td>
+                                        <td><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>0x8bffdb...c7f4bf4</td>
+                                        <td class="blue">0x8bffdb...c7f4bf4</td>
+                                        <td>17 November 2022, 10:12 AM</td>
+                                        <td><span class="status_success">Success</span></td>
+                                        <td><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="user__bottom">
+                            <div class="user__per-page">
+                                <span>Rows Per Page:</span>
+                                <select>
+                                    <option selected>10</option>
+                                    <option>25</option>
+                                    <option>50</option>
+                                </select>
+                            </div>
+                            <div class="user__bottom-controls">
+                                <span>Showing 1 to 10 of 2,466,962</span>
+                                <button>&lt;</button>
+                                <button class="active">1</button>
+                                <button>2</button>
+                                <button>3</button>
+                                <button>...</button>
+                                <button>10</button>
+                                <button>&gt;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- bootstrap -->
+ 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
